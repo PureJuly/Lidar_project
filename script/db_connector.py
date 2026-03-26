@@ -81,8 +81,8 @@ if __name__ == '__main__':
     db = DBConnector(HOST, PW)
     cursor = db.conn.cursor()
 
-    # df = db.get_data(return_pd=True, from_n=20, to_n=50)
-    # print(df)
+    df = db.get_data(from_n=20, to_n=50)
+    print(df)
     #
     # import time
     # import random
