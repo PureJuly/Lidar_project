@@ -37,7 +37,7 @@ class DBConnector:
         try:
             json_ranges = json.dumps(ranges)
             self.cur.execute(
-                '''insert into lidardata(ranges, when_, action) values(%s,%s,%s)''',
+                '''insert into lidardata(ranges, when_, action) values(%s,%s,%s);''',
                 (json_ranges,when,action)
             )
             self.conn.commit()
