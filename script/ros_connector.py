@@ -49,7 +49,7 @@ def main(db):
         cmd_topic.publish(roslibpy.Message(msg))
         db.put_data(
             ranges=lidar_data,
-            when=datetime.datetime.now(),
+            when=datetime.now(),
             action=action,
         )
         time.sleep(1)
