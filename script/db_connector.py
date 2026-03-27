@@ -20,8 +20,9 @@ class DBConnector:
     def initialize(self):
 
         try:
+            self.cur.execute("drop table if exists lidardata;") # add code to init lidardata table by hyomin
             self.cur.execute((
-                "create table if not exists lidardata("
+                "create table lidardata(" # delete code "if not exists" by hyomin
                     "id int primary key auto_increment,"
                     "ranges json,"
                     "when_ datetime,"
@@ -29,7 +30,8 @@ class DBConnector:
                 ");"
             ))
             self.conn.commit()
-        except:
+        except Exception as e: # modified code to check error type by hyomin
+            print(f"DB initializing Error: {e}") # add code to check error type by hyomin
             self.conn.rollback()
 
 
