@@ -44,7 +44,7 @@ def control_turtle(): # modified function by hyomin
 
     front_dist = min(min(lidar_data[0:20]), min(lidar_data[340:360]))
     left_dist = min(lidar_data[70:110])
-    right_dist = min(lidar_data[250,290])
+    right_dist = min(lidar_data[250:290])
 
     SAFE_DIST = 1.0
 
