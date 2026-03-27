@@ -47,7 +47,7 @@
   ```
 * **데이터베이스 세팅:** 윈도우(또는 로컬) MySQL에 `ros` 데이터베이스를 생성하고, `ros_connector.py`, `db_connector.py` 하단 실행문에 입력한 HOST 정보와 IP 주소(vEthernet)가 맞게 설정되어 있는지 확인합니다.
 
-  **확인방법:** `cmd` 명령 실행하여 `ipconfig` 명령 입력 후 `vEthernet IPv4` 주소 확인
+  **확인방법:** 윈도우즈 검색창에 `cmd` 실행하여 `ipconfig` 명령어 입력 후 `vEthernet IPv4` 주소 확인
 
   
 
