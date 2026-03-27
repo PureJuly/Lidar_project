@@ -75,7 +75,7 @@ class DBConnector:
 
 
 if __name__ == '__main__':
-    HOST = 'localhost'
+    HOST = '10.255.255.254' # save DB from Ubuntu to Windows MySQL. modified by hyomin
     PW = "0000"
 
     db = DBConnector(HOST, PW)
