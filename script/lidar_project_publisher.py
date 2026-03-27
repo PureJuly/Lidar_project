@@ -54,7 +54,7 @@ def generate_single_scan(pattern_name):
 	elif pattern_name == "right_wall":
 		pattern_right_wall(scan)
 	elif pattern_name == "no_wall": # add the code because the turtle's behavior is unusual.
-		pattetn_no_wall(scan)
+		pattern_no_wall(scan)
 	return scan
 
 # add the code "no_wall" because the turtle's behavior is unusual.
