@@ -42,6 +42,9 @@ def pattern_left_wall(scan):
 def pattern_right_wall(scan):
 	make_the_wall(scan["ranges"], center_deg = 270, width_deg = 30)
 
+def pattern_no_wall(scan): # add the code because the turtle's behavior is unusual.
+	pass
+
 def generate_single_scan(pattern_name):
 	scan = create_empty_scan()
 	if pattern_name == "front_wall":
@@ -50,9 +53,12 @@ def generate_single_scan(pattern_name):
 		pattern_left_wall(scan)
 	elif pattern_name == "right_wall":
 		pattern_right_wall(scan)
+	elif pattern_name == "no_wall": # add the code because the turtle's behavior is unusual.
+		pattetn_no_wall(scan)
 	return scan
 
-AVAILABLE_PATTERNS = ["front_wall", "left_wall", "right_wall"]
+# add the code "no_wall" because the turtle's behavior is unusual.
+AVAILABLE_PATTERNS = ["front_wall", "left_wall", "right_wall", "no_wall"]
 
 class LidarPublisher(Node):
 	def __init__(self, delay_seconds, out_dir):
